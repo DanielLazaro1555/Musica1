@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Music Player</title>
     <link rel="icon" href="data:,">
 </head>
+
 <body>
     <div class="container mt-5" id="songsContainer">
         <!-- Aquí se mostrarán las canciones dinámicamente -->
@@ -50,16 +52,16 @@
             var songsContainer = document.getElementById('songsContainer');
 
             // Iteramos sobre cada canción en el JSON
-            songsData.forEach(function(song, index) {
+            songsData.forEach(function (song, index) {
                 var songCard = document.createElement('div');
                 songCard.className = 'card';
                 songCard.innerHTML = `
                     <div class="card-body">
                         <h5 class="card-title">${song.archivo_musica || 'Desconocido'}</h5>
                         <p class="card-text">Descripción: ${song.descripcion || 'Desconocido'}</p>
-                        <img src="${song.imagen || 'ruta/al/archivo/default.jpg'}" alt="Imagen del álbum">
+                        <img src="${getFullUrl(song.imagen) || 'ruta/al/archivo/default.jpg'}" alt="Imagen del álbum">
                         <audio controls>
-                            <source src="${song.archivo_musica || 'ruta/al/archivo/default.mp3'}">
+                            <source src="${getFullUrl(song.archivo_musica) || 'ruta/al/archivo/default.mp3'}">
                             Tu navegador no soporta el elemento de audio.
                         </audio>
                     </div>
@@ -68,6 +70,13 @@
                 songsContainer.appendChild(songCard);
             });
         }
+
+        // Función para obtener la URL completa basada en la ubicación actual del script
+        function getFullUrl(relativeUrl) {
+            var base = window.location.href;
+            return new URL(relativeUrl, base).href;
+        }
     </script>
 </body>
+
 </html>
