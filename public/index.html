@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -16,103 +15,14 @@
   </head>
 
   <body>
-=======
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Reproductor de Música</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="icon" href="data:,">
-</head>
-
-<body>
->>>>>>> 2726086dfcd522712b4c2f71b5407cbadb387d43
     <div class="container mt-5" id="songsContainer">
       <!-- Aquí se mostrarán las canciones dinámicamente -->
     </div>
 
     <button id="nextButton" class="btn btn-primary">Siguiente</button>
 
-<<<<<<< HEAD
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
   </body>
-=======
-        function loadJSON(jsonPath) {
-            var xhr = new XMLHttpRequest();
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4) {
-                    if (xhr.status === 200) {
-                        try {
-                            var jsonData = JSON.parse(xhr.responseText);
-
-                            // Verificamos si jsonData es un array o un objeto
-                            if (Array.isArray(jsonData)) {
-                                displaySongs(jsonData);
-                            } else if (typeof jsonData === 'object' && jsonData !== null) {
-                                // Si es un objeto, creamos un array con ese objeto
-                                displaySongs([jsonData]);
-                            } else {
-                                console.error('El archivo JSON no contiene un array de canciones ni un objeto válido.');
-                            }
-                        } catch (error) {
-                            console.error('Error al analizar el archivo JSON:', error);
-                        }
-                    } else {
-                        console.error('Error al cargar el archivo JSON. Código de estado:', xhr.status);
-                    }
-                }
-            };
-            xhr.open('GET', jsonPath, true);
-            xhr.send();
-        }
-
-        function displaySongs(songsData) {
-            var songsContainer = document.getElementById('songsContainer');
-
-            // Iteramos sobre cada canción en el JSON
-            songsData.forEach(function (song, index) {
-                var songCard = document.createElement('div');
-                songCard.className = 'card mb-3';
-                songCard.innerHTML = `
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="${getFullUrl(song.imagen) || 'ruta/al/archivo/default.jpg'}" class="img-fluid rounded-start" alt="Imagen del álbum">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">${song.titulo || 'Desconocido'}</h5>
-                            <p class="card-text">Artista: ${song.artista || 'Desconocido'}</p>
-                            <p class="card-text">Álbum: ${song.album || 'Desconocido'}</p>
-                            <p class="card-text">Género: ${song.genero || 'Desconocido'}</p>
-                            <p class="card-text">Número de pista: ${song.numero_de_pista || 'Desconocido'}</p>
-                            <p class="card-text">Derechos de autor: ${song.derechos_de_autor || 'Desconocido'}</p>
-                                <audio controls class="w-100" style="width: 100%; background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px;">
-                                    <source src="${getFullUrl(song.archivo_musica) || 'ruta/al/archivo/default.mp3'}">
-                                    Tu navegador no soporta el elemento de audio.
-                                </audio>
-                            </div>
-                        </div>
-                    </div>
-                `;
-
-                songsContainer.appendChild(songCard);
-            });
-        }
-
-        // Función para obtener la URL completa basada en la ubicación actual del script
-        function getFullUrl(relativeUrl) {
-            var base = window.location.href;
-            return new URL(relativeUrl, base).href;
-        }
-    </script>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
-</body>
-
->>>>>>> 2726086dfcd522712b4c2f71b5407cbadb387d43
 </html>
