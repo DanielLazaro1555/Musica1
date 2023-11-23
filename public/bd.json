@@ -1,6 +1,26 @@
-{
+[
+  {
     "id": 1,
-    "archivo_musica": "Musics/01 Angels.flac",
+    "archivo_musica": "Albums/198274283_1.flac",
     "descripcion": "198274283",
-    "imagen": "Albums/198274283.jpg"
+    "imagen": "Albums/198274283.jpg",
+    "genero": "Pop/General",
+    "titulo": "Angels",
+    "artista": "Robbie Williams",
+    "album": "Angels",
+    "numero_de_pista": "1/4",
+    "derechos_de_autor": "℗© 1997 Chrysalis Records Ltd"
+  },
+  {
+    "id": 2,
+    "archivo_musica": "Albums/198274283_2.flac",
+    "descripcion": "198274283",
+    "imagen": "Albums/198274283.jpg",
+    "genero": "Pop/General",
+    "titulo": "Angels (Acoustic)",
+    "artista": "Robbie Williams",
+    "album": "Angels",
+    "numero_de_pista": "2/4",
+    "derechos_de_autor": "℗© 1997 Chrysalis Records Ltd"
   }
+]
