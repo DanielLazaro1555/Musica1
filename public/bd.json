@@ -46,5 +46,41 @@
     "album": "Angels",
     "numero_de_pista": "4/4",
     "derechos_de_autor": "℗© 1997 Chrysalis Records Ltd"
+  },
+  {
+    "id": 5,
+    "archivo_musica": "Albums/198274284_1.flac",
+    "descripcion": "198274283",
+    "imagen": "Albums/198274284.jpg",
+    "genero": "Pop/General",
+    "titulo": "Rock DJ",
+    "artista": "Robbie Williams",
+    "album": "Angels",
+    "numero_de_pista": "1/3",
+    "derechos_de_autor": "℗© 2000 Chrysalis Records Ltd"
+  },
+  {
+    "id": 6,
+    "archivo_musica": "Albums/198274284_2.flac",
+    "descripcion": "198274283",
+    "imagen": "Albums/198274284.jpg",
+    "genero": "Rock/General",
+    "titulo": "Talk To Me",
+    "artista": "Robbie Williams",
+    "album": "Angels",
+    "numero_de_pista": "2/3",
+    "derechos_de_autor": "℗© 2000 Chrysalis Records Ltd"
+  },
+  {
+    "id": 7,
+    "archivo_musica": "Albums/198274284_3.flac",
+    "descripcion": "198274283",
+    "imagen": "Albums/198274284.jpg",
+    "genero": "Rock/General",
+    "titulo": "Rock DJ (Player One Remix)",
+    "artista": "Robbie Williams",
+    "album": "Angels",
+    "numero_de_pista": "3/3",
+    "derechos_de_autor": "℗© 2000 Chrysalis Records Ltd"
   }
 ]
