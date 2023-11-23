@@ -3,47 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Información de Música</title>
+  <title>Consumir API</title>
 </head>
 <body>
 
-  <h1>Información de Música</h1>
+  <h1>Datos de la API</h1>
 
-  <div id="infoMusica">
-    <!-- Aquí se mostrará la información dinámicamente -->
+  <div id="apiData">
+    <!-- Aquí se mostrarán los datos de la API -->
   </div>
 
   <script>
-    // Tu objeto JSON
-    var musicaInfo = {
-      "id": 1,
-      "archivo_musica": "Musics/01 Angels.flac",
-      "descripcion": "198274283",
-      "imagen": "imagenes/198274283.jpg"
-    };
-
     // Obtener el contenedor div
-    var infoMusicaDiv = document.getElementById("infoMusica");
+    var apiDataDiv = document.getElementById("apiData");
 
-    // Crear elementos HTML para mostrar la información
-    var idParrafo = document.createElement("p");
-    idParrafo.textContent = "ID: " + musicaInfo.id;
+    // Hacer una solicitud a la API
+    fetch('https://raw.githubusercontent.com/DanielLazaro1555/Musica1/main/public/bd.json')
+      .then(response => response.json())
+      .then(data => {
+        // Crear elementos HTML para mostrar los detalles
+        var lista = document.createElement("ul");
 
-    var archivoParrafo = document.createElement("p");
-    archivoParrafo.textContent = "Archivo de Música: " + musicaInfo.archivo_musica;
+        // Crear elemento de texto para mostrar los detalles del objeto
+        var listItemText = document.createElement("li");
+        listItemText.textContent = `ID: ${data.id}, Archivo de Música: ${data.archivo_musica}, Descripción: ${data.descripcion}`;
+        lista.appendChild(listItemText);
 
-    var descripcionParrafo = document.createElement("p");
-    descripcionParrafo.textContent = "Descripción: " + musicaInfo.descripcion;
+        // Crear elemento de imagen
+        var listItemImage = document.createElement("li");
+        var image = document.createElement("img");
+        image.src = data.imagen;
+        image.alt = "Imagen asociada";
+        listItemImage.appendChild(image);
+        lista.appendChild(listItemImage);
 
-    var imagen = document.createElement("img");
-    imagen.src = musicaInfo.imagen;
-    imagen.alt = "Imagen asociada";
+        // Crear elemento de audio para el archivo FLAC
+        var listItemAudio = document.createElement("li");
+        var audio = document.createElement("audio");
+        audio.controls = true;
+        var source = document.createElement("source");
+        source.src = data.archivo_musica;
+        source.type = "audio/flac"; // Ajusta el tipo MIME según sea necesario
+        audio.appendChild(source);
+        listItemAudio.appendChild(audio);
+        lista.appendChild(listItemAudio);
 
-    // Agregar elementos al contenedor div
-    infoMusicaDiv.appendChild(idParrafo);
-    infoMusicaDiv.appendChild(archivoParrafo);
-    infoMusicaDiv.appendChild(descripcionParrafo);
-    infoMusicaDiv.appendChild(imagen);
+        // Agregar la lista al contenedor div
+        apiDataDiv.appendChild(lista);
+      })
+      .catch(error => console.error('Error al obtener datos de la API:', error));
   </script>
 
 </body>
