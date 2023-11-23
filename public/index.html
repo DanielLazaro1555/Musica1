@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Tu Página de Música</title>
+</head>
+<body>
+    <!-- Contenido de la página aquí -->
+    <div class="container mt-5">
+        <h1 class="text-center">MusicAll for DanielHL</h1>
+        
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Usamos elementos span con IDs para mostrar la información -->
+                        <h5 class="card-title" id="songTitle">Nombre de la Canción 1</h5>
+                        <p class="card-text" id="songArtist">Artista: Desconocido</p>
+                        <p class="card-text" id="songAlbum">Álbum: Desconocido</p>
+                        <p class="card-text" id="songTrackNumber">Número de Pista: Desconocido</p>
+                        <!-- Agrega el reproductor de audio aquí (por ejemplo, utilizando la etiqueta <audio>) -->
+                        <audio controls id="audio1">
+                            <source src="Musics/01 Angels.flac">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                        <a href="Musics/01 Angels.flac" download class="btn btn-primary mt-2">Descargar</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Repite esta estructura para cada canción -->
+        </div>
+    </div>
+    
+    <!-- Scripts de Bootstrap -->
+    <!-- Cambiamos la forma de cargar jsmediatags -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.2/jsmediatags.min.js"></script>
+    
+    <script>
+        // Extraer metadatos cuando se carga la página
+        document.addEventListener('DOMContentLoaded', function () {
+            extractMetadata('Musics/01 Angels.flac', 'audio1');
+            // Repite esto para cada canción
+        });
+    
+        function extractMetadata(filePath, audioId) {
+            jsmediatags.read(filePath, {
+                onSuccess: function (tag) {
+                    var title = tag.tags.title || 'Desconocido';
+                    var artist = tag.tags.artist || 'Desconocido';
+                    var album = tag.tags.album || 'Desconocido';
+                    var trackNumber = tag.tags.track || 'Desconocido';
+    
+                    // Actualizamos la información de la tarjeta con los metadatos
+                    document.getElementById('songTitle').innerText = title;
+                    document.getElementById('songArtist').innerText = 'Artista: ' + artist;
+                    document.getElementById('songAlbum').innerText = 'Álbum: ' + album;
+                    document.getElementById('songTrackNumber').innerText = 'Número de Pista: ' + trackNumber;
+                },
+                onError: function (error) {
+                    console.log(error);
+                }
+            });
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

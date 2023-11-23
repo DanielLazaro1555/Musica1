@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Información de Música</title>
+</head>
+<body>
+
+  <h1>Información de Música</h1>
+
+  <div id="infoMusica">
+    <!-- Aquí se mostrará la información dinámicamente -->
+  </div>
+
+  <script>
+    // Tu objeto JSON
+    var musicaInfo = {
+      "id": 1,
+      "archivo_musica": "Musics/01 Angels.flac",
+      "descripcion": "198274283",
+      "imagen": "imagenes/198274283.jpg"
+    };
+
+    // Obtener el contenedor div
+    var infoMusicaDiv = document.getElementById("infoMusica");
+
+    // Crear elementos HTML para mostrar la información
+    var idParrafo = document.createElement("p");
+    idParrafo.textContent = "ID: " + musicaInfo.id;
+
+    var archivoParrafo = document.createElement("p");
+    archivoParrafo.textContent = "Archivo de Música: " + musicaInfo.archivo_musica;
+
+    var descripcionParrafo = document.createElement("p");
+    descripcionParrafo.textContent = "Descripción: " + musicaInfo.descripcion;
+
+    var imagen = document.createElement("img");
+    imagen.src = musicaInfo.imagen;
+    imagen.alt = "Imagen asociada";
+
+    // Agregar elementos al contenedor div
+    infoMusicaDiv.appendChild(idParrafo);
+    infoMusicaDiv.appendChild(archivoParrafo);
+    infoMusicaDiv.appendChild(descripcionParrafo);
+    infoMusicaDiv.appendChild(imagen);
+  </script>
+
+</body>
+</html>
