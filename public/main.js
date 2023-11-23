@@ -104,12 +104,11 @@ function displayCurrentSong(currentSong) {
                         currentSong.derechos_de_autor || "Desconocido"
                       }</span></p>
                       
-                      <audio controls class="w-100" style="width: 100%; background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px;">
-                          <source src="${getFullUrl(
-                            currentSong.archivo_musica
-                          )}">
-                          Tu navegador no soporta el elemento de audio.
-                      </audio>
+                      <audio id="audioPlayer" autoplay controls class="w-100" style="width: 100%; background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px;">
+                        <source src="${getFullUrl(currentSong.archivo_musica)}">
+                        Tu navegador no soporta el elemento de audio.
+                        </audio>
+
                   </div>
               </div>
           </div>
