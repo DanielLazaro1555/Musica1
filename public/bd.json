@@ -20,7 +20,15 @@
     "titulo": "Angels (Acoustic)",
     "artista": "Robbie Williams",
     "album": "Angels",
+<<<<<<< HEAD
     "numero_de_pista": "2/4",
     "derechos_de_autor": "℗© 1997 Chrysalis Records Ltd"
   }
 ]
+=======
+    "numero_de_pista": "1/4",
+    "derechos_de_autor": "℗© 1997 Chrysalis Records Ltd"
+  }
+]
+
+>>>>>>> 2726086dfcd522712b4c2f71b5407cbadb387d43
