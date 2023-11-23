@@ -32,6 +32,19 @@ function loadJSON(jsonPath) {
               // Llamamos a la función para mostrar la nueva canción
               displayCurrentSong(jsonData[currentSongIndex]);
             });
+
+            // Agregamos un evento al botón "Anterior"
+            var prevButton = document.getElementById("prevButton"); // Corregido: prevButton en lugar de nextButton
+            prevButton.addEventListener("click", function () {
+              // Decrementamos el índice de la canción actual
+              currentSongIndex--;
+              // Verificamos si el índice está fuera del rango
+              if (currentSongIndex < 0) {
+                currentSongIndex = jsonData.length - 1; // Volvemos al final si llegamos al principio
+              }
+              // Llamamos a la función para mostrar la nueva canción
+              displayCurrentSong(jsonData[currentSongIndex]);
+            });
           } else if (typeof jsonData === "object" && jsonData !== null) {
             // Si es un objeto, creamos un array con ese objeto
             displayCurrentSong(jsonData);
