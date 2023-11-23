@@ -63,8 +63,12 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">${song.archivo_musica || 'Desconocido'}</h5>
-                                <p class="card-text">Descripción: ${song.descripcion || 'Desconocido'}</p>
+                                <h5 class="card-title">${song.titulo || 'Desconocido'}</h5>
+                            <p class="card-text">Artista: ${song.artista || 'Desconocido'}</p>
+                            <p class="card-text">Álbum: ${song.album || 'Desconocido'}</p>
+                            <p class="card-text">Género: ${song.genero || 'Desconocido'}</p>
+                            <p class="card-text">Número de pista: ${song.numero_de_pista || 'Desconocido'}</p>
+                            <p class="card-text">Derechos de autor: ${song.derechos_de_autor || 'Desconocido'}</p>
                                 <audio controls class="w-100" style="width: 100%; background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px;">
                                     <source src="${getFullUrl(song.archivo_musica) || 'ruta/al/archivo/default.mp3'}">
                                     Tu navegador no soporta el elemento de audio.
