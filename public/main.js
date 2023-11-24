@@ -118,7 +118,7 @@ function displayCurrentSong(currentSong) {
         </audio>
 
         <div class="audio-controls">
-            <button id="playPauseButton" class="btn btn-primary">Reproducir</button>
+            <button id="playPauseButton" class="btn btn-primary">Pausa</button>
             <div class="audio-progress">
                 <input type="range" id="progressBar" value="0" step="1" />
             </div>
@@ -158,6 +158,17 @@ function displayCurrentSong(currentSong) {
   var playPauseButton = document.getElementById("playPauseButton");
   playPauseButton.addEventListener("click", togglePlayPause);
 
+  // Función para cambiar entre reproducción y pausa
+  function togglePlayPause() {
+    if (audioPlayer.paused) {
+      audioPlayer.play();
+      playPauseButton.textContent = "Pausar";
+    } else {
+      audioPlayer.pause();
+      playPauseButton.textContent = "Reproducir";
+    }
+  }
+
   var progressBar = document.getElementById("progressBar");
   progressBar.addEventListener("input", seek);
 
@@ -165,14 +176,7 @@ function displayCurrentSong(currentSong) {
   setInterval(updateCurrentTime, 1000);
 }
 
-// Función para cambiar entre reproducción y pausa
-function togglePlayPause() {
-  if (audioPlayer.paused) {
-    audioPlayer.play();
-  } else {
-    audioPlayer.pause();
-  }
-}
+
 
 // Función para actualizar el tiempo actual y la barra de progreso
 function updateCurrentTime() {
