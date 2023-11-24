@@ -65,6 +65,9 @@ function displayDataOnPage(data) {
       var buttonElement = document.createElement("button");
       buttonElement.textContent = "Reproducir";
 
+      // Asignar un identificador único al botón (por ejemplo, el índice)
+      buttonElement.id = `button-${index}`;
+
       // Ajustar estilos personalizados para el botón
       buttonElement.style.paddingTop = "1.5rem";
       buttonElement.style.paddingBottom = "1.5rem";
@@ -125,55 +128,59 @@ function filterSongs(searchTerm) {
 }
 
 function updatemiContenedor(songs) {
-    var miContenedor = document.getElementById('miContenedor');
-    // Limpiamos el contenido actual antes de agregar los nuevos resultados
-    miContenedor.innerHTML = '';
-  
-    songs.forEach(function (song) {
-      var songContainer = document.createElement('div');
-      songContainer.classList.add(
-        'song-container',
-        'row',
-        'mb-3',
-        'border',
-        'border-secondary',
-        'rounded',
-        'align-items-center'
-      );
-  
-      var imageElement = document.createElement('img');
-      imageElement.src = new URL(song.imagen, window.location.href).href;
-      imageElement.classList.add('col-12', 'col-md-3', 'rounded', 'border');
-  
-      // Corregir el uso de 'song' en lugar de 'item' aquí
-      var textElement = document.createElement('div');
-      textElement.innerHTML = `<strong>${song.titulo}</strong> <br> ${song.artista}`;
-      textElement.classList.add('col-12', 'col-md-6', 'text-center');
-  
-      var buttonElement = document.createElement('button');
-      buttonElement.textContent = 'Reproducir';
-  
-      buttonElement.style.paddingTop = '1.5rem';
-      buttonElement.style.paddingBottom = '1.5rem';
-      buttonElement.style.marginTop = '1rem';
-  
-      buttonElement.classList.add(
-        'col-12',
-        'col-md-3',
-        'btn',
-        'btn-primary',
-        'ml-md-auto',
-        'my-2'
-      );
-  
-      var iconElement = document.createElement('i');
-      iconElement.classList.add('bi', 'bi-play');
-      buttonElement.appendChild(iconElement);
-  
-      songContainer.appendChild(imageElement);
-      songContainer.appendChild(textElement);
-      songContainer.appendChild(buttonElement);
-  
-      miContenedor.appendChild(songContainer);
-    });
-  }
+  var miContenedor = document.getElementById("miContenedor");
+  // Limpiamos el contenido actual antes de agregar los nuevos resultados
+  miContenedor.innerHTML = "";
+
+  songs.forEach(function (song) {
+    var songContainer = document.createElement("div");
+    songContainer.classList.add(
+      "song-container",
+      "row",
+      "mb-3",
+      "border",
+      "border-secondary",
+      "rounded",
+      "align-items-center"
+    );
+
+    var imageElement = document.createElement("img");
+    imageElement.src = new URL(song.imagen, window.location.href).href;
+    imageElement.classList.add("col-12", "col-md-3", "rounded", "border");
+
+    // Corregir el uso de 'song' en lugar de 'item' aquí
+    var textElement = document.createElement("div");
+    textElement.innerHTML = `<strong>${song.titulo}</strong> <br> ${song.artista}`;
+    textElement.classList.add("col-12", "col-md-6", "text-center");
+
+    var buttonElement = document.createElement("button");
+    buttonElement.textContent = "Reproducir";
+
+    buttonElement.style.paddingTop = "1.5rem";
+    buttonElement.style.paddingBottom = "1.5rem";
+    buttonElement.style.marginTop = "1rem";
+
+    buttonElement.classList.add(
+      "col-12",
+      "col-md-3",
+      "btn",
+      "btn-primary",
+      "ml-md-auto",
+      "my-2"
+    );
+
+    var iconElement = document.createElement("i");
+    iconElement.classList.add("bi", "bi-play");
+    buttonElement.appendChild(iconElement);
+
+    songContainer.appendChild(imageElement);
+    songContainer.appendChild(textElement);
+    songContainer.appendChild(buttonElement);
+
+    miContenedor.appendChild(songContainer);
+  });
+}
+
+function regresar() {
+  window.location.href = "index.html";
+}
