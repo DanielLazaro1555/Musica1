@@ -3,39 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extractor de Tags FLAC</title>
+    <title>Visualizar Metadatos de Archivo de Audio</title>
 </head>
 <body>
-    <h1>Extractor de Tags FLAC</h1>
-    <input type="file" id="fileInput" accept=".flac">
-    <button onclick="extractTags()">Extraer Tags</button>
-    <pre id="output"></pre>
+    <input type="file" id="fileInput" onchange="displayAudioMetadata()">
+    <div id="audioMetadata"></div>
 
+    <script src="jsmediatags.min.js"></script>
     <script>
-        function extractTags() {
+        function displayAudioMetadata() {
             const fileInput = document.getElementById('fileInput');
-            const output = document.getElementById('output');
+            const audioMetadata = document.getElementById('audioMetadata');
 
-            const file = fileInput.files[0];
-            if (!file) {
-                output.textContent = 'Selecciona un archivo FLAC';
-                return;
+            if (fileInput.files.length > 0) {
+                const file = fileInput.files[0];
+
+                if (window.FileReader) {
+                    const reader = new FileReader();
+
+                    reader.onload = function (event) {
+                        const arrayBuffer = event.target.result;
+
+                        // Utilizar jsmediatags para extraer metadatos
+                        extractMetadata(arrayBuffer, metadata => {
+                            audioMetadata.innerHTML = `<p><strong>Álbum:</strong> ${metadata.tags.album || 'N/A'}</p>
+                                                       <p><strong>Género:</strong> ${metadata.tags.genre || 'N/A'}</p>
+                                                       <p><strong>Artista:</strong> ${metadata.tags.artist || 'N/A'}</p>`;
+                        });
+                    };
+
+                    // Leer el contenido del archivo como ArrayBuffer
+                    reader.readAsArrayBuffer(file);
+                } else {
+                    audioMetadata.innerHTML = '<p>FileReader API no está disponible en este navegador.</p>';
+                }
+            } else {
+                audioMetadata.innerHTML = '<p>No se ha seleccionado ningún archivo de audio.</p>';
             }
+        }
 
-            const formData = new FormData();
-            formData.append('file', file);
-
-            fetch('http://localhost:5500/extract-tags', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                output.textContent = JSON.stringify(data, null, 2);
-            })
-            .catch(error => {
-                output.textContent = 'Error al extraer los tags del archivo.';
-                console.error(error);
+        function extractMetadata(arrayBuffer, callback) {
+            jsmediatags.read(arrayBuffer, {
+                onSuccess: function (tag) {
+                    callback(tag);
+                },
+                onError: function (error) {
+                    console.error('Error al extraer metadatos:', error);
+                    audioMetadata.innerHTML = '<p>Error al extraer metadatos.</p>';
+                }
             });
         }
     </script>

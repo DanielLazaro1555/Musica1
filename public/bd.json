@@ -92,7 +92,7 @@
     "titulo": "Let Love Be Your Energy",
     "artista": "Robbie Williams",
     "album": "Sing When You're Winning",
-    "numero_de_pista": "3/3",
+    "numero_de_pista": "1/13",
     "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
   },
   {
@@ -101,10 +101,34 @@
     "descripcion": "198274285",
     "imagen": "Albums/198274285.jpg",
     "genero": "Rock/General",
-    "titulo": "Rock DJ (Player One Remix)",
+    "titulo": "Better Man",
     "artista": "Robbie Williams",
     "album": "Sing When You're Winning",
-    "numero_de_pista": "3/3",
+    "numero_de_pista": "2/13",
     "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
   },
+  {
+    "id": 9,
+    "archivo_musica": "Albums/198274285_3.flac",
+    "descripcion": "198274285",
+    "imagen": "Albums/198274285.jpg",
+    "genero": "Pop/General",
+    "titulo": "Rock DJ",
+    "artista": "Robbie Williams",
+    "album": "Sing When You're Winning",
+    "numero_de_pista": "3/13",
+    "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+  },
+  {
+    "id": 9,
+    "archivo_musica": "Albums/198274285_4.flac",
+    "descripcion": "198274285",
+    "imagen": "Albums/198274285.jpg",
+    "genero": "Pop/General",
+    "titulo": "Supreme",
+    "artista": "Robbie Williams",
+    "album": "Sing When You're Winning",
+    "numero_de_pista": "4/13",
+    "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+  }
 ]
