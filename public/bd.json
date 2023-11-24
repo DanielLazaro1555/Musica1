@@ -82,5 +82,29 @@
     "album": "Angels",
     "numero_de_pista": "3/3",
     "derechos_de_autor": "℗© 2000 Chrysalis Records Ltd"
-  }
+  },
+  {
+    "id": 8,
+    "archivo_musica": "Albums/198274285_1.flac",
+    "descripcion": "198274285",
+    "imagen": "Albums/198274285.jpg",
+    "genero": "Rock/General",
+    "titulo": "Let Love Be Your Energy",
+    "artista": "Robbie Williams",
+    "album": "Sing When You're Winning",
+    "numero_de_pista": "3/3",
+    "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+  },
+  {
+    "id": 9,
+    "archivo_musica": "Albums/198274285_2.flac",
+    "descripcion": "198274285",
+    "imagen": "Albums/198274285.jpg",
+    "genero": "Rock/General",
+    "titulo": "Rock DJ (Player One Remix)",
+    "artista": "Robbie Williams",
+    "album": "Sing When You're Winning",
+    "numero_de_pista": "3/3",
+    "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+  },
 ]

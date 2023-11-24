@@ -1,92 +1,43 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extracción de datos de archivo FLAC</title>
-    <script src="https://cdn.jsdelivr.net/npm/jsmediatags/dist/jsmediatags.min.js"></script>
+    <title>Extractor de Tags FLAC</title>
 </head>
-
 <body>
-    <input type="file" id="inputFile" accept=".flac">
-    <div id="output"></div>
-    <img id="albumArt" alt="Portada del álbum">
+    <h1>Extractor de Tags FLAC</h1>
+    <input type="file" id="fileInput" accept=".flac">
+    <button onclick="extractTags()">Extraer Tags</button>
+    <pre id="output"></pre>
 
     <script>
-        document.getElementById('inputFile').addEventListener('change', handleFileSelect);
+        function extractTags() {
+            const fileInput = document.getElementById('fileInput');
+            const output = document.getElementById('output');
 
-        function handleFileSelect(event) {
-            const file = event.target.files[0];
-
-            if (file) {
-                jsmediatags.read(file, {
-                    onSuccess: function (tag) {
-                        displayMetadata(tag.tags);
-                        displayAlbumArt(tag.tags);
-                    },
-                    onError: function (error) {
-                        console.error(error);
-                    }
-                });
-            }
-        }
-
-        function displayMetadata(metadata) {
-            const outputDiv = document.getElementById('output');
-            outputDiv.innerHTML = '';
-
-            const translation = {
-                title: 'Título',
-                artist: 'Artista',
-                album: 'Álbum',
-                track: 'Pista',
-                genre: 'Género',
-                picture: 'Portada'
-            };
-
-            for (const key in metadata) {
-                if (metadata.hasOwnProperty(key)) {
-                    const value = key === 'picture' ? '[object Object]' : metadata[key];
-                    const translatedKey = translation[key] || key;
-                    const paragraph = document.createElement('p');
-                    paragraph.textContent = `${translatedKey}: ${value}`;
-                    outputDiv.appendChild(paragraph);
-                }
-            }
-        }
-
-
-        function displayAlbumArt(metadata) {
-            const albumArtElement = document.getElementById('albumArt');
-            albumArtElement.src = '';
-
-            if (metadata.picture && metadata.picture.length > 0) {
-                const picture = metadata.picture[0];
-
-                if (picture.data && picture.format) {
-                    const blob = new Blob([picture.data], { type: picture.format });
-                    const imgUrl = URL.createObjectURL(blob);
-                    albumArtElement.src = imgUrl;
-                }
-            }
-        }
-
-
-
-
-        function arrayBufferToBase64(buffer) {
-            let binary = '';
-            const bytes = new Uint8Array(buffer);
-            const len = bytes.byteLength;
-
-            for (let i = 0; i < len; i++) {
-                binary += String.fromCharCode(bytes[i]);
+            const file = fileInput.files[0];
+            if (!file) {
+                output.textContent = 'Selecciona un archivo FLAC';
+                return;
             }
 
-            return window.btoa(binary);
+            const formData = new FormData();
+            formData.append('file', file);
+
+            fetch('http://localhost:5500/extract-tags', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                output.textContent = JSON.stringify(data, null, 2);
+            })
+            .catch(error => {
+                output.textContent = 'Error al extraer los tags del archivo.';
+                console.error(error);
+            });
         }
     </script>
 </body>
-
 </html>
