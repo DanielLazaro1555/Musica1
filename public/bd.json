@@ -154,5 +154,29 @@
     "album": "Sing When You're Winning",
     "numero_de_pista": "6/13",
     "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+  },
+  {
+    "id": 14,
+    "archivo_musica": "Albums/198274285_7.flac",
+    "descripcion": "198274285.flac",
+    "imagen": "Albums/198274285.flac.jpg",
+    "genero": "Rock/General",
+    "titulo": "Singing For The Lonely",
+    "artista": "Robbie Williams",
+    "album": "Sing When You're Winning",
+    "numero_de_pista": "7/13",
+    "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+  },
+  {
+    "id": 15,
+    "archivo_musica": "Albums/198274285_8.flac",
+    "descripcion": "198274285.flac",
+    "imagen": "Albums/198274285.flac.jpg",
+    "genero": "Rock/General",
+    "titulo": "Love Calling Earth",
+    "artista": "Robbie Williams",
+    "album": "Sing When You're Winning",
+    "numero_de_pista": "8/13",
+    "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
   }
 ]
