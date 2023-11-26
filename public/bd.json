@@ -385,6 +385,30 @@
   },
   {
     "id": 33,
+    "archivo_musica": "Albums/198274287_1.flac",
+    "descripcion": "198274287",
+    "imagen": "Albums/198274287.jpg",
+    "genero": "Pop/General",
+    "titulo": "How Peculiar",
+    "artista": "Robbie Williams",
+    "album": "Escapology [Explicit]",
+    "numero_de_pista": "1/14",
+    "Año": "2002"
+  },
+  {
+    "id": 34,
+    "archivo_musica": "Albums/198274287_2.flac",
+    "descripcion": "198274287",
+    "imagen": "Albums/198274287.jpg",
+    "genero": "Pop/General",
+    "titulo": "Feel",
+    "artista": "Robbie Williams",
+    "album": "Escapology [Explicit]",
+    "numero_de_pista": "2/14",
+    "Año": "2002"
+  },
+  {
+    "id": 35,
     "archivo_musica": "Albums/198274286_12.flac",
     "descripcion": "198274286",
     "imagen": "Albums/198274286.jpg",
@@ -396,7 +420,7 @@
     "Año": "1998"
   },
   {
-    "id": 32,
+    "id": 36,
     "archivo_musica": "Albums/198274286_12.flac",
     "descripcion": "198274286",
     "imagen": "Albums/198274286.jpg",
@@ -408,7 +432,7 @@
     "Año": "1998"
   },
   {
-    "id": 32,
+    "id": 37,
     "archivo_musica": "Albums/198274286_12.flac",
     "descripcion": "198274286",
     "imagen": "Albums/198274286.jpg",
@@ -420,31 +444,7 @@
     "Año": "1998"
   },
   {
-    "id": 32,
-    "archivo_musica": "Albums/198274286_12.flac",
-    "descripcion": "198274286",
-    "imagen": "Albums/198274286.jpg",
-    "genero": "Rock/General",
-    "titulo": "These Dreams (+ Hidden Tracks 'Stand Your Ground' And 'Stalker's Day Off')",
-    "artista": "Robbie Williams",
-    "album": "I've Been Expecting You",
-    "numero_de_pista": "12/12",
-    "Año": "1998"
-  },
-  {
-    "id": 32,
-    "archivo_musica": "Albums/198274286_12.flac",
-    "descripcion": "198274286",
-    "imagen": "Albums/198274286.jpg",
-    "genero": "Rock/General",
-    "titulo": "These Dreams (+ Hidden Tracks 'Stand Your Ground' And 'Stalker's Day Off')",
-    "artista": "Robbie Williams",
-    "album": "I've Been Expecting You",
-    "numero_de_pista": "12/12",
-    "Año": "1998"
-  },
-  {
-    "id": 32,
+    "id": 38,
     "archivo_musica": "Albums/198274286_12.flac",
     "descripcion": "198274286",
     "imagen": "Albums/198274286.jpg",
