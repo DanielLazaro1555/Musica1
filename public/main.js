@@ -80,55 +80,53 @@ function displayCurrentSong(currentSong) {
   songsContainer.innerHTML = ""; // Limpiamos el contenedor
 
   // Creamos la tarjeta de la canción
+  // Creamos la tarjeta de la canción
   var songCard = document.createElement("div");
   songCard.className = "card mb-3";
   songCard.innerHTML = `
-          <div class="row g-0">
-          <div class="col-md-4 d-flex justify-content-center">
-          <img src="${getFullUrl(
-            currentSong.imagen
-          )}" class="img-fluid rounded-4 mx-auto d-block" alt="Imagen del álbum" style="max-width: 80%; height: auto;">
-          
+    <div class="row g-0">
+      <div class="col-md-4 d-flex justify-content-center">
+        <img src="${getFullUrl(
+          currentSong.imagen
+        )}" class="img-fluid rounded-4 mx-auto d-block" alt="Imagen del álbum" style="max-width: 80%; height: auto;">
       </div>
-              <div class="col-md-8">
-                  <div class="card-body">
-                  <h5 class="card-title text-center marquee-text" onclick="moveText(this)">
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title text-center marquee-text" onclick="moveText(this)">
             <strong>${currentSong.titulo || "Desconocido"}</strong>
           </h5>
-                      <p class="card-text"><strong>Artista:</strong><br> <span>${
-                        currentSong.artista || "Desconocido"
-                      }</span></p>
-                      <p class="card-text"><strong>Álbum:</strong><br> <span>${
-                        currentSong.album || "Desconocido"
-                      }</span></p>
-                      <p class="card-text"><strong>Género:</strong><br> <span>${
-                        currentSong.genero || "Desconocido"
-                      }</span></p>
-                      <p class="card-text"><strong>Número de pista:</strong><br> <span>${
-                        currentSong.numero_de_pista || "Desconocido"
-                      }</span></p>
-                      <p class="card-text"><strong>Año:</strong><br> <span>${
-                        currentSong.Año || "Desconocido"
-                      }</span></p>
-                      
-                      <div class="audio-player">
-        <audio id="audioPlayer">
-            <source src="${getFullUrl(currentSong.archivo_musica)}">
-            Tu navegador no soporta el elemento de audio.
-        </audio>
-
-        <div class="audio-controls">
-            <button id="playPauseButton" class="btn btn-primary">Pausa</button>
-            <div class="audio-progress">
+          <p class="card-text"><strong>Artista:</strong><br> <span>${
+            currentSong.artista || "Desconocido"
+          }</span></p>
+          <p class="card-text"><strong>Álbum:</strong><br> <span>${
+            currentSong.album || "Desconocido"
+          }</span></p>
+          <p class="card-text"><strong>Género:</strong><br> <span>${
+            currentSong.genero || "Desconocido"
+          }</span></p>
+          <p class="card-text"><strong>Número de pista:</strong><br> <span>${
+            currentSong.numero_de_pista || "Desconocido"
+          }</span></p>
+          <p class="card-text"><strong>Año:</strong><br> <span>${
+            currentSong.Año || "Desconocido"
+          }</span></p>
+          <div class="audio-player">
+            <audio id="audioPlayer">
+              <source src="${getFullUrl(currentSong.archivo_musica)}">
+              Tu navegador no soporta el elemento de audio.
+            </audio>
+            <div class="audio-controls">
+              <button id="playPauseButton" class="btn btn-primary">Pausa</button>
+              <div class="audio-progress">
                 <input type="range" id="progressBar" value="0" step="1" />
-            </div>
-            <span id="currentTime">0:00</span>
-        </div>
-    </div>
-                  </div>
               </div>
+              <span id="currentTime">0:00</span>
+            </div>
           </div>
-      `;
+        </div>
+      </div>
+    </div>
+  `;
 
   songsContainer.appendChild(songCard);
 
@@ -262,14 +260,4 @@ function setupSearch(data) {
 
 function regresar() {
   window.location.href = "Bienvenido.html";
-}
-
-
-
-// Función para mover el texto una sola vez al hacer clic
-function moveText(element) {
-  element.style.animation = "marquee 5s linear";
-  element.style.whiteSpace = "nowrap";
-  element.style.overflow = "hidden";
-  element.style.textOverflow = "ellipsis";
 }
