@@ -66,4 +66,6 @@
   }
   
   /* Resto de tus estilos */
-  
+  body {
+    background-color: rgba(227, 227, 227, 0.47843137255); /* R, G, B, Opacidad */
+}
