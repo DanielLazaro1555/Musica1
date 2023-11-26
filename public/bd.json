@@ -241,6 +241,18 @@
   },
   {
     "id": 21,
+    "archivo_musica": "Albums/198274286_1.flac",
+    "descripcion": "198274286",
+    "imagen": "Albums/198274286.jpg",
+    "genero": "Rock/General",
+    "titulo": "Strong [Explicit]",
+    "artista": "Robbie Williams",
+    "album": "I've Been Expecting You",
+    "numero_de_pista": "1/12",
+    "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+  },
+  {
+    "id": 22,
     "archivo_musica": "Albums/198274286_2.flac",
     "descripcion": "198274286",
     "imagen": "Albums/198274286.jpg",
@@ -249,6 +261,54 @@
     "artista": "Robbie Williams",
     "album": "I've Been Expecting You",
     "numero_de_pista": "2/12",
+    "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+  },
+  {
+    "id": 23,
+    "archivo_musica": "Albums/198274286_3.flac",
+    "descripcion": "198274286",
+    "imagen": "Albums/198274286.jpg",
+    "genero": "Rock/General",
+    "titulo": "Millennium",
+    "artista": "Robbie Williams",
+    "album": "I've Been Expecting You",
+    "numero_de_pista": "3/12",
+    "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+  },
+  {
+    "id": 24,
+    "archivo_musica": "Albums/198274286_4.flac",
+    "descripcion": "198274286",
+    "imagen": "Albums/198274286.jpg",
+    "genero": "Rock/General",
+    "titulo": "Phoenix From The Flames",
+    "artista": "Robbie Williams",
+    "album": "I've Been Expecting You",
+    "numero_de_pista": "4/12",
+    "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+  },
+  {
+    "id": 25,
+    "archivo_musica": "Albums/198274286_5.flac",
+    "descripcion": "198274286",
+    "imagen": "Albums/198274286.jpg",
+    "genero": "Rock/General",
+    "titulo": "Win Some Lose Some",
+    "artista": "Robbie Williams",
+    "album": "I've Been Expecting You",
+    "numero_de_pista": "5/12",
+    "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+  },
+  {
+    "id": 26,
+    "archivo_musica": "Albums/198274286_6.flac",
+    "descripcion": "198274286",
+    "imagen": "Albums/198274286.jpg",
+    "genero": "Rock/General",
+    "titulo": "Grace",
+    "artista": "Robbie Williams",
+    "album": "I've Been Expecting You",
+    "numero_de_pista": "6/12",
     "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
   }
 ]
