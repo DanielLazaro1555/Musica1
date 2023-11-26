@@ -2,9 +2,29 @@
 
 /* Barra de búsqueda */
 #searchInput {
-    margin-top: 10px;
-    width: 100%;
-  }
+  margin-top: 10px;
+  width: calc(100% - 20px); /* Resta 20px para dar espacio total a los lados */
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-left: 10px; /* Ajusta el espacio en el lado izquierdo según sea necesario */
+  margin-right: 10px; /* Ajusta el espacio en el lado derecho según sea necesario */
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+#searchInput:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#searchInput::placeholder {
+  color: #6c757d;
+}
+
+
   
   /* Contenedor de sugerencias */
   #suggestionsContainer {
@@ -69,7 +89,6 @@
   width: 100%; /* Hacer que la barra de reproducción ocupe todo el ancho disponible */
 }
 #playPauseButton {
-  width: 100px;
   margin: 0 auto; /* Establecer margen automático para centrar horizontalmente */
 }
 

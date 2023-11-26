@@ -116,7 +116,7 @@ function displayCurrentSong(currentSong) {
               Tu navegador no soporta el elemento de audio.
             </audio>
             <div class="audio-controls">
-              <button id="playPauseButton" class="btn btn-primary">Pausa</button>
+              <button id="playPauseButton" class="btn btn-primary"><span style="font-size: 30px;">\u23F8</span></button>
               <div class="audio-progress">
                 <input type="range" id="progressBar" value="0" step="1" />
               </div>
@@ -160,10 +160,11 @@ function displayCurrentSong(currentSong) {
   function togglePlayPause() {
     if (audioPlayer.paused) {
       audioPlayer.play();
-      playPauseButton.textContent = "Pausar";
+      
+      playPauseButton.innerHTML = '<span style="font-size: 30px;">\u23F8</span>';
     } else {
       audioPlayer.pause();
-      playPauseButton.textContent = "Reproducir";
+      playPauseButton.innerHTML = '<span style="font-size: 30px;">\u25B6</span>';
     }
   }
 
@@ -261,3 +262,7 @@ function setupSearch(data) {
 function regresar() {
   window.location.href = "Bienvenido.html";
 }
+var playPauseButton = document.getElementById("playPauseButton");
+
+// Usar innerHTML para cambiar el contenido del botón
+playPauseButton.innerHTML = '<span style="font-size: 30px; vertical-align: middle;">\u23F8</span>';
