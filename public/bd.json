@@ -586,5 +586,41 @@
     "album": "La Tormenta De Arena (3Msc)",
     "numero_de_pista": "3/3",
     "Año": "2010"
+  },
+  {
+    "id": 50,
+    "archivo_musica": "Albums/198274289_1.flac",
+    "descripcion": "198274289",
+    "imagen": "Albums/198274289.jpg",
+    "genero": "Alternative Rock",
+    "titulo": "Back One Day (Outro Song)",
+    "artista": "TheFatRat & NEFFEX",
+    "album": "Back One Day (Outro Song)",
+    "numero_de_pista": "1/2",
+    "Año": "2022"
+  },
+  {
+    "id": 51,
+    "archivo_musica": "Albums/198274289_2.flac",
+    "descripcion": "198274289",
+    "imagen": "Albums/198274289.jpg",
+    "genero": "Alternative Rock",
+    "titulo": "Xenogenesis",
+    "artista": "TheFatRat & NEFFEX",
+    "album": "Back One Day (Outro Song)",
+    "numero_de_pista": "2/2",
+    "Año": "2014"
+  },
+  {
+    "id": 52,
+    "archivo_musica": "Albums/198274290_1.flac",
+    "descripcion": "198274290",
+    "imagen": "Albums/198274290.jpg",
+    "genero": "Rap & Hip-Hop",
+    "titulo": "Join Us for a Bite (Remastered)",
+    "artista": "JT Music feat. Andrea Storm Kaden",
+    "album": "Join Us for a Bite (Remastered)",
+    "numero_de_pista": "1/1",
+    "Año": "2022"
   }
 ]
