@@ -230,13 +230,25 @@
   {
     "id": 20,
     "archivo_musica": "Albums/198274285_13.flac",
-  "descripcion": "198274285",
-  "imagen": "Albums/198274285.jpg",
+    "descripcion": "198274285",
+    "imagen": "Albums/198274285.jpg",
+    "genero": "Rock/General",
+    "titulo": "Ser Mejor",
+    "artista": "Robbie Williams",
+    "album": "Sing When You're Winning",
+    "numero_de_pista": "13/13",
+    "derechos_de_autor": "℗© 2000 Chrysalis Records Ltd"
+  },
+  {
+    "id": 21,
+    "archivo_musica": "Albums/198274286_1.flac",
+  "descripcion": "198274286",
+  "imagen": "Albums/198274286.jpg",
   "genero": "Rock/General",
-  "titulo": "Ser Mejor",
+  "titulo": "Strong [Explicit]",
   "artista": "Robbie Williams",
-  "album": "Sing When You're Winning [Explicit]",
-  "numero_de_pista": "13/13",
-  "derechos_de_autor": "℗© 2000 Chrysalis Records Ltd"
+  "album": "I've Been Expecting You",
+  "numero_de_pista": "1/12",
+  "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
   }
 ]
