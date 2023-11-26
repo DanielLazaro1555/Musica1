@@ -1,9 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Llamamos a la función loadJSON con la URL del archivo JSON en línea
-  loadJSON(
+  // Función de ofuscación para la URL del archivo JSON
+  function obfuscateURL(url) {
+    // Lógica de ofuscación (puedes implementar tu propia lógica aquí)
+    return btoa(url);
+  }
+
+  // Lógica de ofuscación de la URL
+  const obfuscatedURL = obfuscateURL(
     "https://raw.githubusercontent.com/DanielLazaro1555/Musica1/main/public/bd.json"
   );
+
+  // Llamamos a la función loadJSON con la URL ofuscada
+  loadJSON(atob(obfuscatedURL));
 });
+
 
 var currentSongIndex = 0; // Índice de la canción actual
 var allSongsData; // Variable para almacenar todos los datos de las canciones
