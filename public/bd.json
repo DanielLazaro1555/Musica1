@@ -9,7 +9,7 @@
     "artista": "Robbie Williams",
     "album": "Angels",
     "numero_de_pista": "1/4",
-    "año": "℗© 1997 Chrysalis Records Ltd"
+    "Año": "1997"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "artista": "Robbie Williams",
     "album": "Angels",
     "numero_de_pista": "2/4",
-    "año": "℗© 1997 Chrysalis Records Ltd"
+    "Año": "1997"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "artista": "Robbie Williams",
     "album": "Angels",
     "numero_de_pista": "3/4",
-    "año": "℗© 1997 Chrysalis Records Ltd"
+    "Año": "1997"
   },
   {
     "id": 4,
@@ -45,19 +45,19 @@
     "artista": "Robbie Williams",
     "album": "Angels",
     "numero_de_pista": "4/4",
-    "año": "℗© 1997 Chrysalis Records Ltd"
+    "Año": "1997"
   },
   {
     "id": 5,
     "archivo_musica": "Albums/198274284_1.flac",
-    "descripcion": "198274283",
+    "descripcion": "198274284",
     "imagen": "Albums/198274284.jpg",
     "genero": "Pop/General",
     "titulo": "Rock DJ",
     "artista": "Robbie Williams",
-    "album": "Angels",
+    "album": "Rock DJ",
     "numero_de_pista": "1/3",
-    "año": "℗© 2000 Chrysalis Records Ltd"
+    "Año": "2000"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "artista": "Robbie Williams",
     "album": "Angels",
     "numero_de_pista": "2/3",
-    "año": "℗© 2000 Chrysalis Records Ltd"
+    "Año": "2000"
   },
   {
     "id": 7,
@@ -81,19 +81,19 @@
     "artista": "Robbie Williams",
     "album": "Angels",
     "numero_de_pista": "3/3",
-    "año": "℗© 2000 Chrysalis Records Ltd"
+    "Año": "2000"
   },
   {
     "id": 8,
     "archivo_musica": "Albums/198274285_1.flac",
     "descripcion": "198274285",
     "imagen": "Albums/198274285.jpg",
-    "genero": "Rock/General",
+    "genero": "Pop/General",
     "titulo": "Let Love Be Your Energy",
     "artista": "Robbie Williams",
     "album": "Sing When You're Winning",
     "numero_de_pista": "1/13",
-    "año": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+    "Año": "2000"
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "artista": "Robbie Williams",
     "album": "Sing When You're Winning",
     "numero_de_pista": "2/13",
-    "año": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+    "Año": "2000"
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
     "artista": "Robbie Williams",
     "album": "Sing When You're Winning",
     "numero_de_pista": "3/13",
-    "año": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+    "Año": "2000"
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "artista": "Robbie Williams",
     "album": "Sing When You're Winning",
     "numero_de_pista": "4/13",
-    "año": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+    "Año": "2000"
   },
   {
     "id": 12,
@@ -141,7 +141,7 @@
     "artista": "Robbie Williams & Kylie Minogue",
     "album": "Sing When You're Winning",
     "numero_de_pista": "5/13",
-    "año": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+    "Año": "2000"
   },
   {
     "id": 13,
@@ -153,7 +153,7 @@
     "artista": "Robbie Williams",
     "album": "Sing When You're Winning",
     "numero_de_pista": "6/13",
-    "año": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+    "Año": "2000"
   },
   {
     "id": 14,
@@ -165,7 +165,7 @@
     "artista": "Robbie Williams",
     "album": "Sing When You're Winning",
     "numero_de_pista": "7/13",
-    "año": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+    "Año": "2000"
   },
   {
     "id": 15,
@@ -177,7 +177,7 @@
     "artista": "Robbie Williams",
     "album": "Sing When You're Winning",
     "numero_de_pista": "8/13",
-    "año": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+    "Año": "2000"
   },
   {
     "id": 16,
@@ -189,7 +189,7 @@
     "artista": "Robbie Williams",
     "album": "Sing When You're Winning",
     "numero_de_pista": "9/13",
-    "año": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+    "Año": "2000"
   },
   {
     "id": 17,
@@ -201,7 +201,7 @@
     "artista": "Robbie Williams",
     "album": "Sing When You're Winning",
     "numero_de_pista": "10/13",
-    "año": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+    "Año": "2000"
   },
   {
     "id": 18,
@@ -213,7 +213,7 @@
     "artista": "Robbie Williams",
     "album": "Sing When You're Winning",
     "numero_de_pista": "11/13",
-    "año": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+    "Año": "2000"
   },
   {
     "id": 19,
@@ -225,7 +225,7 @@
     "artista": "Robbie Williams",
     "album": "Sing When You're Winning",
     "numero_de_pista": "12/13",
-    "año": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+    "Año": "2000"
   },
   {
     "id": 20,
@@ -237,7 +237,7 @@
     "artista": "Robbie Williams",
     "album": "Sing When You're Winning",
     "numero_de_pista": "13/13",
-    "año": "℗© 2000 Chrysalis Records Ltd"
+    "Año": "2000"
   },
   {
     "id": 21,
