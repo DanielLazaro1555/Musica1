@@ -158,8 +158,8 @@
   {
     "id": 14,
     "archivo_musica": "Albums/198274285_7.flac",
-    "descripcion": "198274285.flac",
-    "imagen": "Albums/198274285.flac.jpg",
+    "descripcion": "198274285",
+    "imagen": "Albums/198274285.jpg",
     "genero": "Rock/General",
     "titulo": "Singing For The Lonely",
     "artista": "Robbie Williams",
@@ -170,8 +170,8 @@
   {
     "id": 15,
     "archivo_musica": "Albums/198274285_8.flac",
-    "descripcion": "198274285.flac",
-    "imagen": "Albums/198274285.flac.jpg",
+    "descripcion": "198274285",
+    "imagen": "Albums/198274285.jpg",
     "genero": "Rock/General",
     "titulo": "Love Calling Earth",
     "artista": "Robbie Williams",
