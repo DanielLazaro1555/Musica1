@@ -118,7 +118,7 @@ function displayCurrentSong(currentSong) {
         </audio>
 
         <div class="audio-controls">
-            <button id="playPauseButton" class="btn btn-primary">Pausa</button>
+            <button id="playPauseButton" class="btn btn-primary">Comenzar</button>
             <div class="audio-progress">
                 <input type="range" id="progressBar" value="0" step="1" />
             </div>
@@ -175,8 +175,6 @@ function displayCurrentSong(currentSong) {
   // Iniciar la actualización del tiempo actual
   setInterval(updateCurrentTime, 1000);
 }
-
-
 
 // Función para actualizar el tiempo actual y la barra de progreso
 function updateCurrentTime() {
@@ -245,7 +243,8 @@ function setupSearch(data) {
     // Mostrar las sugerencias actuales
     filteredSongs.forEach(function (song) {
       var suggestion = document.createElement("div");
-      suggestion.textContent = song.titulo + " - " + song.artista + " - " + song.album;
+      suggestion.textContent =
+        song.titulo + " - " + song.artista + " - " + song.album;
       suggestion.classList.add("suggestion");
 
       // Agregar un evento al hacer clic en una sugerencia
