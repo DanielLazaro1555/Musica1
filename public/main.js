@@ -118,7 +118,7 @@ function displayCurrentSong(currentSong) {
         </audio>
 
         <div class="audio-controls">
-            <button id="playPauseButton" class="btn btn-primary">Comenzar</button>
+            <button id="playPauseButton" class="btn btn-primary">Pausa</button>
             <div class="audio-progress">
                 <input type="range" id="progressBar" value="0" step="1" />
             </div>
