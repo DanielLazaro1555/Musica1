@@ -245,7 +245,7 @@ function setupSearch(data) {
     // Mostrar las sugerencias actuales
     filteredSongs.forEach(function (song) {
       var suggestion = document.createElement("div");
-      suggestion.textContent = song.titulo + " - " + song.artista;
+      suggestion.textContent = song.titulo + " - " + song.artista + " - " + song.album;
       suggestion.classList.add("suggestion");
 
       // Agregar un evento al hacer clic en una sugerencia
