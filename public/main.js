@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Llamamos a la función loadJSON con la URL del archivo JSON en línea
   loadJSON(
-    "https://raw.githubusercontent.com/DanielLazaro1555/Musica1/main/public/bd.json?token=GHSAT0AAAAAACKVIGRR5L5KOCEPNBYPKQTKZLC5YXA"
+    "https://raw.githubusercontent.com/DanielLazaro1555/Musica1/main/public/bd.json"
   );
 });
 
