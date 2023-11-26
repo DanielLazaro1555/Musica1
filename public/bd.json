@@ -540,7 +540,7 @@
     "Año": "2002"
   },
   {
-    "id": 47,
+    "id": 46,
     "archivo_musica": "Albums/198274287_14.flac",
     "descripcion": "198274287",
     "imagen": "Albums/198274287.jpg",
@@ -550,5 +550,41 @@
     "album": "Escapology [Explicit]",
     "numero_de_pista": "14/14",
     "Año": "2002"
+  },
+  {
+    "id": 47,
+    "archivo_musica": "Albums/198274288_1.flac",
+    "descripcion": "198274288",
+    "imagen": "Albums/198274288.jpg",
+    "genero": "Pop",
+    "titulo": "La Tormenta De Arena",
+    "artista": "Dorian",
+    "album": "La Tormenta De Arena (3Msc)",
+    "numero_de_pista": "1/3",
+    "Año": "2009"
+  },
+  {
+    "id": 48,
+    "archivo_musica": "Albums/198274288_2.flac",
+    "descripcion": "198274288",
+    "imagen": "Albums/198274288.jpg",
+    "genero": "Pop",
+    "titulo": "Verte Amanecer",
+    "artista": "Dorian",
+    "album": "La Tormenta De Arena (3Msc)",
+    "numero_de_pista": "2/3",
+    "Año": "2009"
+  },
+  {
+    "id": 49,
+    "archivo_musica": "Albums/198274288_3.flac",
+    "descripcion": "198274288",
+    "imagen": "Albums/198274288.jpg",
+    "genero": "Pop",
+    "titulo": "La Tormenta De Arena (I.B. Remix)",
+    "artista": "Dorian",
+    "album": "La Tormenta De Arena (3Msc)",
+    "numero_de_pista": "3/3",
+    "Año": "2010"
   }
 ]
