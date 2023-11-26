@@ -87,14 +87,14 @@ function displayCurrentSong(currentSong) {
           <div class="col-md-4 d-flex justify-content-center">
           <img src="${getFullUrl(
             currentSong.imagen
-          )}" class="img-fluid rounded-4 mx-auto d-block" alt="Imagen del álbum" style="max-width: 100%; height: auto;">
+          )}" class="img-fluid rounded-4 mx-auto d-block" alt="Imagen del álbum" style="max-width: 80%; height: auto;">
           
       </div>
               <div class="col-md-8">
                   <div class="card-body">
-                      <h5 class="card-title text-center"><strong>${
-                        currentSong.titulo || "Desconocido"
-                      }</strong></h5>
+                  <h5 class="card-title text-center marquee-text" onclick="moveText(this)">
+            <strong>${currentSong.titulo || "Desconocido"}</strong>
+          </h5>
                       <p class="card-text"><strong>Artista:</strong><br> <span>${
                         currentSong.artista || "Desconocido"
                       }</span></p>
@@ -262,4 +262,14 @@ function setupSearch(data) {
 
 function regresar() {
   window.location.href = "Bienvenido.html";
+}
+
+
+
+// Función para mover el texto una sola vez al hacer clic
+function moveText(element) {
+  element.style.animation = "marquee 5s linear";
+  element.style.whiteSpace = "nowrap";
+  element.style.overflow = "hidden";
+  element.style.textOverflow = "ellipsis";
 }

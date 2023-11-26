@@ -69,3 +69,28 @@
   body {
     background-color: rgba(227, 227, 227, 0.47843137255); /* R, G, B, Opacidad */
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  animation: marquee 10s linear infinite; /* Puedes ajustar la duración y el tipo de animación aquí */
+}
+.card-body {
+  overflow: hidden;
+}
+
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
