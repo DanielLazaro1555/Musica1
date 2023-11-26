@@ -108,7 +108,7 @@
     "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
   },
   {
-    "id": 9,
+    "id": 10,
     "archivo_musica": "Albums/198274285_3.flac",
     "descripcion": "198274285",
     "imagen": "Albums/198274285.jpg",
@@ -120,7 +120,7 @@
     "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
   },
   {
-    "id": 9,
+    "id": 11,
     "archivo_musica": "Albums/198274285_4.flac",
     "descripcion": "198274285",
     "imagen": "Albums/198274285.jpg",
@@ -129,6 +129,18 @@
     "artista": "Robbie Williams",
     "album": "Sing When You're Winning",
     "numero_de_pista": "4/13",
+    "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
+  },
+  {
+    "id": 12,
+    "archivo_musica": "Albums/198274285_4.flac",
+    "descripcion": "198274285",
+    "imagen": "Albums/198274285.jpg",
+    "genero": "Pop/General",
+    "titulo": "Kids",
+    "artista": "Robbie Williams\nartist\nRobbie Williams & Kylie Minogue",
+    "album": "Sing When You're Winning",
+    "numero_de_pista": "5/13",
     "derechos_de_autor": "℗© 2013 Universal Island Records, a division of Universal Music Operations Limited"
   }
 ]
