@@ -108,7 +108,7 @@ function displayCurrentSong(currentSong) {
                         currentSong.numero_de_pista || "Desconocido"
                       }</span></p>
                       <p class="card-text"><strong>Año:</strong><br> <span>${
-                        currentSong.año || "Desconocido"
+                        currentSong.Año || "Desconocido"
                       }</span></p>
                       
                       <div class="audio-player">
