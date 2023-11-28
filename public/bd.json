@@ -1,5 +1,14 @@
-
-  },
+[{
+"archivo_musica": "Albums/198274283_1.flac",
+    "descripcion": "198274283",
+    "imagen": "Albums/198274283.jpg",
+    "genero": "Pop/General",
+    "titulo": "Angels",
+    "artista": "Robbie Williams",
+    "album": "Angels",
+    "numero_de_pista": "1/4",
+    "Año": "1997"  
+},
   {
     "archivo_musica": "Albums/198274283_2.flac",
     "descripcion": "198274283",
