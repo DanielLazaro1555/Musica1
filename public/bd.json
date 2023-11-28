@@ -603,5 +603,93 @@
     "album": "Sentimiento, Elegancia Y Maldad",
     "numero_de_pista": "2/18",
     "Año": "2013"
+  },
+  {
+    "archivo_musica": "Albums/198274292_3.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Contigo Quiero Amores",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "3/18",
+    "Año": "2013"
+  },
+  {
+    "archivo_musica": "Albums/198274292_4.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Sola (feat. De La Ghetto)",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "4/18",
+    "Año": "2013"
+  },
+  {
+    "archivo_musica": "Albums/198274292_5.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Ire a Buscarte [Explicit]",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "5/18",
+    "Año": "2023"
+  },
+  {
+    "archivo_musica": "Albums/198274292_6.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Gucci Boys Club [Explicit]",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "6/18",
+    "Año": "2013"
+  },
+  {
+    "archivo_musica": "Albums/198274292_7.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Cuando Tu No Estas",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "7/18",
+    "Año": "2013"
+  },
+  {
+    "archivo_musica": "Albums/198274292_8.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Como Tiene Que Ser",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "8/18",
+    "Año": "2013"
+  },
+  {
+    "archivo_musica": "Albums/198274292_9.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Pakas De 100 (feat. Daddy Yankee)",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "9/18",
+    "Año": "2013"
+  },
+  {
+    "archivo_musica": "Albums/198274292_10.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Sem",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "10/18",
+    "Año": "2013"
   }
 ]
