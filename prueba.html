@@ -1,58 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualizar Metadatos de Archivo de Audio</title>
+    <title>Obtener Datos JSON con Bootstrap</title>
+    <!-- Agregar enlaces a Bootstrap CSS y JS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <input type="file" id="fileInput" onchange="displayAudioMetadata()">
-    <div id="audioMetadata"></div>
+<body class="container mt-5">
 
-    <script src="jsmediatags.min.js"></script>
+    <h1 class="mb-4">Datos desde JSON</h1>
+    <div id="output" class="mb-4"></div>
+
     <script>
-        function displayAudioMetadata() {
-            const fileInput = document.getElementById('fileInput');
-            const audioMetadata = document.getElementById('audioMetadata');
-
-            if (fileInput.files.length > 0) {
-                const file = fileInput.files[0];
-
-                if (window.FileReader) {
-                    const reader = new FileReader();
-
-                    reader.onload = function (event) {
-                        const arrayBuffer = event.target.result;
-
-                        // Utilizar jsmediatags para extraer metadatos
-                        extractMetadata(arrayBuffer, metadata => {
-                            audioMetadata.innerHTML = `<p><strong>Álbum:</strong> ${metadata.tags.album || 'N/A'}</p>
-                                                       <p><strong>Género:</strong> ${metadata.tags.genre || 'N/A'}</p>
-                                                       <p><strong>Artista:</strong> ${metadata.tags.artist || 'N/A'}</p>`;
-                        });
-                    };
-
-                    // Leer el contenido del archivo como ArrayBuffer
-                    reader.readAsArrayBuffer(file);
-                } else {
-                    audioMetadata.innerHTML = '<p>FileReader API no está disponible en este navegador.</p>';
-                }
-            } else {
-                audioMetadata.innerHTML = '<p>No se ha seleccionado ningún archivo de audio.</p>';
-            }
+        function obtenerDatos(url) {
+            fetch(url)
+                .then(response => response.json())
+                .then(data => mostrarDatos(data))
+                .catch(error => console.error('Error al obtener datos:', error));
         }
 
-        function extractMetadata(arrayBuffer, callback) {
-            jsmediatags.read(arrayBuffer, {
-                onSuccess: function (tag) {
-                    callback(tag);
-                },
-                onError: function (error) {
-                    console.error('Error al extraer metadatos:', error);
-                    audioMetadata.innerHTML = '<p>Error al extraer metadatos.</p>';
-                }
+        function mostrarDatos(data) {
+            var outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = '<h2>Datos Obtenidos:</h2>';
+
+            data.forEach(item => {
+                outputDiv.innerHTML += '<p>' + JSON.stringify(item) + '</p>';
             });
         }
+
+        obtenerDatos('https://raw.githubusercontent.com/DanielLazaro1555/Musica1/main/public/bd.json');
+
+        setTimeout(function() {
+            obtenerDatos('https://raw.githubusercontent.com/DanielLazaro1555/Musica2/main/public/bd.json');
+        }, 2000);
     </script>
+
+    <!-- Agregar enlaces a Bootstrap JS y jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

@@ -5,28 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
     return btoa(url);
   }
 
-  // Lógica de ofuscación de la URL para Musica1
-  const obfuscatedURL1 = obfuscateURL(
+  // Lógica de ofuscación de la URL
+  const obfuscatedURL = obfuscateURL(
     "https://raw.githubusercontent.com/DanielLazaro1555/Musica1/main/public/bd.json"
   );
 
-  // Llamamos a la función loadJSON con la URL ofuscada para Musica1
-  loadJSON(atob(obfuscatedURL1));
-
-  // Lógica de ofuscación de la URL para Musica2
-  const obfuscatedURL2 = obfuscateURL(
-    "https://raw.githubusercontent.com/DanielLazaro1555/Musica2/main/public/bd.json"
-  );
-
-  // Llamamos a la función loadJSON con la URL ofuscada para Musica2
-  loadJSON(atob(obfuscatedURL2));
+  // Llamamos a la función loadJSON con la URL ofuscada
+  loadJSON(atob(obfuscatedURL));
 });
-
-// Resto del código sin cambios
-// ...
-
-
-
 var currentSongIndex = 0; // Índice de la canción actual
 var allSongsData; // Variable para almacenar todos los datos de las canciones
 var audioPlayer; // Variable para el reproductor de audio
@@ -102,53 +88,52 @@ function displayCurrentSong(currentSong) {
   songsContainer.innerHTML = ""; // Limpiamos el contenedor
 
   // Creamos la tarjeta de la canción
-  // Creamos la tarjeta de la canción
   var songCard = document.createElement("div");
   songCard.className = "card mb-3";
   songCard.innerHTML = `
-    <div class="row g-0">
-      <div class="col-md-4 d-flex justify-content-center">
-        <img src="${getFullUrl(
-          currentSong.imagen
-        )}" class="img-fluid rounded-4 mx-auto d-block" alt="Imagen del álbum" style="max-width: 80%; height: auto;">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title text-center marquee-text" onclick="moveText(this)">
-            <strong>${currentSong.titulo || "Desconocido"}</strong>
-          </h5>
-          <p class="card-text"><strong>Artista:</strong><br> <span>${
-            currentSong.artista || "Desconocido"
-          }</span></p>
-          <p class="card-text"><strong>Álbum:</strong><br> <span>${
-            currentSong.album || "Desconocido"
-          }</span></p>
-          <p class="card-text"><strong>Género:</strong><br> <span>${
-            currentSong.genero || "Desconocido"
-          }</span></p>
-          <p class="card-text"><strong>Número de pista:</strong><br> <span>${
-            currentSong.numero_de_pista || "Desconocido"
-          }</span></p>
-          <p class="card-text"><strong>Año:</strong><br> <span>${
-            currentSong.Año || "Desconocido"
-          }</span></p>
-          <div class="audio-player">
-            <audio id="audioPlayer">
-              <source src="${getFullUrl(currentSong.archivo_musica)}">
-              Tu navegador no soporta el elemento de audio.
-            </audio>
-            <div class="audio-controls">
-              <button id="playPauseButton" class="btn btn-primary"><span style="font-size: 30px;">\u23F8</span></button>
-              <div class="audio-progress">
-                <input type="range" id="progressBar" value="0" step="1" />
+      <div class="row g-0">
+        <div class="col-md-4 d-flex justify-content-center">
+          <img src="${getFullUrl(
+            currentSong.imagen
+          )}" class="img-fluid rounded-4 mx-auto d-block" alt="Imagen del álbum" style="max-width: 80%; height: auto;">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-center marquee-text" onclick="moveText(this)">
+              <strong>${currentSong.titulo || "Desconocido"}</strong>
+            </h5>
+            <p class="card-text"><strong>Artista:</strong><br> <span>${
+              currentSong.artista || "Desconocido"
+            }</span></p>
+            <p class="card-text"><strong>Álbum:</strong><br> <span>${
+              currentSong.album || "Desconocido"
+            }</span></p>
+            <p class="card-text"><strong>Género:</strong><br> <span>${
+              currentSong.genero || "Desconocido"
+            }</span></p>
+            <p class="card-text"><strong>Número de pista:</strong><br> <span>${
+              currentSong.numero_de_pista || "Desconocido"
+            }</span></p>
+            <p class="card-text"><strong>Año:</strong><br> <span>${
+              currentSong.Año || "Desconocido"
+            }</span></p>
+            <div class="audio-player">
+              <audio id="audioPlayer">
+                <source src="${getFullUrl(currentSong.archivo_musica)}">
+                Tu navegador no soporta el elemento de audio.
+              </audio>
+              <div class="audio-controls">
+                <button id="playPauseButton" class="btn btn-primary"><span style="font-size: 30px;">\u23F8</span></button>
+                <div class="audio-progress">
+                  <input type="range" id="progressBar" value="0" step="1" />
+                </div>
+                <span id="currentTime">0:00</span>
               </div>
-              <span id="currentTime">0:00</span>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  `;
+    `;
 
   songsContainer.appendChild(songCard);
 
@@ -182,11 +167,13 @@ function displayCurrentSong(currentSong) {
   function togglePlayPause() {
     if (audioPlayer.paused) {
       audioPlayer.play();
-      
-      playPauseButton.innerHTML = '<span style="font-size: 30px;">\u23F8</span>';
+
+      playPauseButton.innerHTML =
+        '<span style="font-size: 30px;">\u23F8</span>';
     } else {
       audioPlayer.pause();
-      playPauseButton.innerHTML = '<span style="font-size: 30px;">\u25B6</span>';
+      playPauseButton.innerHTML =
+        '<span style="font-size: 30px;">\u25B6</span>';
     }
   }
 
@@ -287,4 +274,5 @@ function regresar() {
 var playPauseButton = document.getElementById("playPauseButton");
 
 // Usar innerHTML para cambiar el contenido del botón
-playPauseButton.innerHTML = '<span style="font-size: 30px; vertical-align: middle;">\u23F8</span>';
+playPauseButton.innerHTML =
+  '<span style="font-size: 30px; vertical-align: middle;">\u23F8</span>';
