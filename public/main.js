@@ -5,14 +5,26 @@ document.addEventListener("DOMContentLoaded", function () {
     return btoa(url);
   }
 
-  // Lógica de ofuscación de la URL
-  const obfuscatedURL = obfuscateURL(
+  // Lógica de ofuscación de la URL para Musica1
+  const obfuscatedURL1 = obfuscateURL(
     "https://raw.githubusercontent.com/DanielLazaro1555/Musica1/main/public/bd.json"
   );
 
-  // Llamamos a la función loadJSON con la URL ofuscada
-  loadJSON(atob(obfuscatedURL));
+  // Llamamos a la función loadJSON con la URL ofuscada para Musica1
+  loadJSON(atob(obfuscatedURL1));
+
+  // Lógica de ofuscación de la URL para Musica2
+  const obfuscatedURL2 = obfuscateURL(
+    "https://raw.githubusercontent.com/DanielLazaro1555/Musica2/main/public/bd.json"
+  );
+
+  // Llamamos a la función loadJSON con la URL ofuscada para Musica2
+  loadJSON(atob(obfuscatedURL2));
 });
+
+// Resto del código sin cambios
+// ...
+
 
 
 var currentSongIndex = 0; // Índice de la canción actual
