@@ -588,7 +588,6 @@
     "Año": "2010"
   },
   {
-    "id": 50,
     "archivo_musica": "Albums/198274289_1.flac",
     "descripcion": "198274289",
     "imagen": "Albums/198274289.jpg",
@@ -600,7 +599,6 @@
     "Año": "2022"
   },
   {
-    "id": 51,
     "archivo_musica": "Albums/198274289_2.flac",
     "descripcion": "198274289",
     "imagen": "Albums/198274289.jpg",
@@ -612,7 +610,6 @@
     "Año": "2014"
   },
   {
-    "id": 52,
     "archivo_musica": "Albums/198274290_1.flac",
     "descripcion": "198274290",
     "imagen": "Albums/198274290.jpg",
