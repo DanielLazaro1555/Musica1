@@ -127,7 +127,7 @@ function displayCurrentSong(currentSong) {
           }</span></p>
           <div class="audio-player">
             <audio id="audioPlayer">
-              <source src="${getFullUrl(currentSong.archivo_musica)}">
+            <source src="${getFullUrl(currentSong.archivo_musica)}">
               Tu navegador no soporta el elemento de audio.
             </audio>
             <div class="audio-controls">
