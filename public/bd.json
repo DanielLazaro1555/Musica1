@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "archivo_musica": "Albums/198274283_1.flac",
     "descripcion": "198274283",
     "imagen": "Albums/198274283.jpg",
@@ -12,7 +11,6 @@
     "Año": "1997"
   },
   {
-    "id": 2,
     "archivo_musica": "Albums/198274283_2.flac",
     "descripcion": "198274283",
     "imagen": "Albums/198274283.jpg",
@@ -24,7 +22,6 @@
     "Año": "1997"
   },
   {
-    "id": 3,
     "archivo_musica": "Albums/198274283_3.flac",
     "descripcion": "198274283",
     "imagen": "Albums/198274283.jpg",
@@ -36,7 +33,6 @@
     "Año": "1997"
   },
   {
-    "id": 4,
     "archivo_musica": "Albums/198274283_4.flac",
     "descripcion": "198274283",
     "imagen": "Albums/198274283.jpg",
@@ -48,7 +44,6 @@
     "Año": "1997"
   },
   {
-    "id": 5,
     "archivo_musica": "Albums/198274284_1.flac",
     "descripcion": "198274284",
     "imagen": "Albums/198274284.jpg",
@@ -60,7 +55,6 @@
     "Año": "2000"
   },
   {
-    "id": 6,
     "archivo_musica": "Albums/198274284_2.flac",
     "descripcion": "198274284",
     "imagen": "Albums/198274284.jpg",
@@ -72,7 +66,6 @@
     "Año": "2000"
   },
   {
-    "id": 7,
     "archivo_musica": "Albums/198274284_3.flac",
     "descripcion": "198274284",
     "imagen": "Albums/198274284.jpg",
@@ -84,7 +77,6 @@
     "Año": "2000"
   },
   {
-    "id": 8,
     "archivo_musica": "Albums/198274285_1.flac",
     "descripcion": "198274285",
     "imagen": "Albums/198274285.jpg",
@@ -96,7 +88,6 @@
     "Año": "2000"
   },
   {
-    "id": 9,
     "archivo_musica": "Albums/198274285_2.flac",
     "descripcion": "198274285",
     "imagen": "Albums/198274285.jpg",
@@ -108,7 +99,6 @@
     "Año": "2000"
   },
   {
-    "id": 10,
     "archivo_musica": "Albums/198274285_3.flac",
     "descripcion": "198274285",
     "imagen": "Albums/198274285.jpg",
@@ -120,7 +110,6 @@
     "Año": "2000"
   },
   {
-    "id": 11,
     "archivo_musica": "Albums/198274285_4.flac",
     "descripcion": "198274285",
     "imagen": "Albums/198274285.jpg",
@@ -132,7 +121,6 @@
     "Año": "2000"
   },
   {
-    "id": 12,
     "archivo_musica": "Albums/198274285_5.flac",
     "descripcion": "198274285",
     "imagen": "Albums/198274285.jpg",
@@ -144,7 +132,6 @@
     "Año": "2000"
   },
   {
-    "id": 13,
     "archivo_musica": "Albums/198274285_6.flac",
     "descripcion": "198274285",
     "imagen": "Albums/198274285.jpg",
@@ -156,7 +143,6 @@
     "Año": "2000"
   },
   {
-    "id": 14,
     "archivo_musica": "Albums/198274285_7.flac",
     "descripcion": "198274285",
     "imagen": "Albums/198274285.jpg",
@@ -168,7 +154,6 @@
     "Año": "2000"
   },
   {
-    "id": 15,
     "archivo_musica": "Albums/198274285_8.flac",
     "descripcion": "198274285",
     "imagen": "Albums/198274285.jpg",
@@ -180,7 +165,6 @@
     "Año": "2000"
   },
   {
-    "id": 16,
     "archivo_musica": "Albums/198274285_9.flac",
     "descripcion": "198274285",
     "imagen": "Albums/198274285.jpg",
@@ -192,7 +176,6 @@
     "Año": "2000"
   },
   {
-    "id": 17,
     "archivo_musica": "Albums/198274285_10.flac",
     "descripcion": "198274285",
     "imagen": "Albums/198274285.jpg",
@@ -204,7 +187,6 @@
     "Año": "2000"
   },
   {
-    "id": 18,
     "archivo_musica": "Albums/198274285_11.flac",
     "descripcion": "198274285",
     "imagen": "Albums/198274285.jpg",
@@ -216,7 +198,6 @@
     "Año": "2000"
   },
   {
-    "id": 19,
     "archivo_musica": "Albums/198274285_12.flac",
     "descripcion": "198274285",
     "imagen": "Albums/198274285.jpg",
@@ -228,7 +209,6 @@
     "Año": "2000"
   },
   {
-    "id": 20,
     "archivo_musica": "Albums/198274285_13.flac",
     "descripcion": "198274285",
     "imagen": "Albums/198274285.jpg",
@@ -240,7 +220,6 @@
     "Año": "2000"
   },
   {
-    "id": 21,
     "archivo_musica": "Albums/198274286_1.flac",
     "descripcion": "198274286",
     "imagen": "Albums/198274286.jpg",
@@ -252,7 +231,6 @@
     "Año": "1998"
   },
   {
-    "id": 22,
     "archivo_musica": "Albums/198274286_2.flac",
     "descripcion": "198274286",
     "imagen": "Albums/198274286.jpg",
@@ -264,7 +242,6 @@
     "Año": "1998"
   },
   {
-    "id": 23,
     "archivo_musica": "Albums/198274286_3.flac",
     "descripcion": "198274286",
     "imagen": "Albums/198274286.jpg",
@@ -276,7 +253,6 @@
     "Año": "1998"
   },
   {
-    "id": 24,
     "archivo_musica": "Albums/198274286_4.flac",
     "descripcion": "198274286",
     "imagen": "Albums/198274286.jpg",
@@ -288,7 +264,6 @@
     "Año": "1998"
   },
   {
-    "id": 25,
     "archivo_musica": "Albums/198274286_5.flac",
     "descripcion": "198274286",
     "imagen": "Albums/198274286.jpg",
@@ -300,7 +275,6 @@
     "Año": "1998"
   },
   {
-    "id": 26,
     "archivo_musica": "Albums/198274286_6.flac",
     "descripcion": "198274286",
     "imagen": "Albums/198274286.jpg",
@@ -312,7 +286,6 @@
     "Año": "1998"
   },
   {
-    "id": 27,
     "archivo_musica": "Albums/198274286_7.flac",
     "descripcion": "198274286",
     "imagen": "Albums/198274286.jpg",
@@ -324,7 +297,6 @@
     "Año": "1998"
   },
   {
-    "id": 28,
     "archivo_musica": "Albums/198274286_8.flac",
     "descripcion": "198274286",
     "imagen": "Albums/198274286.jpg",
@@ -336,7 +308,6 @@
     "Año": "1998"
   },
   {
-    "id": 29,
     "archivo_musica": "Albums/198274286_9.flac",
     "descripcion": "198274286",
     "imagen": "Albums/198274286.jpg",
@@ -348,7 +319,6 @@
     "Año": "1998"
   },
   {
-    "id": 30,
     "archivo_musica": "Albums/198274286_10.flac",
     "descripcion": "198274286",
     "imagen": "Albums/198274286.jpg",
@@ -360,7 +330,6 @@
     "Año": "1998"
   },
   {
-    "id": 31,
     "archivo_musica": "Albums/198274286_11.flac",
     "descripcion": "198274286",
     "imagen": "Albums/198274286.jpg",
@@ -372,7 +341,6 @@
     "Año": "1998"
   },
   {
-    "id": 32,
     "archivo_musica": "Albums/198274286_12.flac",
     "descripcion": "198274286",
     "imagen": "Albums/198274286.jpg",
@@ -384,7 +352,6 @@
     "Año": "1998"
   },
   {
-    "id": 33,
     "archivo_musica": "Albums/198274287_1.flac",
     "descripcion": "198274287",
     "imagen": "Albums/198274287.jpg",
@@ -396,7 +363,6 @@
     "Año": "2002"
   },
   {
-    "id": 34,
     "archivo_musica": "Albums/198274287_2.flac",
     "descripcion": "198274287",
     "imagen": "Albums/198274287.jpg",
@@ -408,7 +374,6 @@
     "Año": "2002"
   },
   {
-    "id": 35,
     "archivo_musica": "Albums/198274287_3.flac",
     "descripcion": "198274287",
     "imagen": "Albums/198274287.jpg",
@@ -420,7 +385,6 @@
     "Año": "2002"
   },
   {
-    "id": 36,
     "archivo_musica": "Albums/198274287_4.flac",
     "descripcion": "198274287",
     "imagen": "Albums/198274287.jpg",
@@ -432,7 +396,6 @@
     "Año": "2002"
   },
   {
-    "id": 37,
     "archivo_musica": "Albums/198274287_5.flac",
     "descripcion": "198274287",
     "imagen": "Albums/198274287.jpg",
@@ -444,7 +407,6 @@
     "Año": "2002"
   },
   {
-    "id": 38,
     "archivo_musica": "Albums/198274287_6.flac",
     "descripcion": "198274287",
     "imagen": "Albums/198274287.jpg",
@@ -456,7 +418,6 @@
     "Año": "2002"
   },
   {
-    "id": 39,
     "archivo_musica": "Albums/198274287_7.flac",
     "descripcion": "198274287",
     "imagen": "Albums/198274287.jpg",
@@ -468,7 +429,6 @@
     "Año": "2002"
   },
   {
-    "id": 40,
     "archivo_musica": "Albums/198274287_8.flac",
     "descripcion": "198274287",
     "imagen": "Albums/198274287.jpg",
@@ -480,7 +440,6 @@
     "Año": "2002"
   },
   {
-    "id": 41,
     "archivo_musica": "Albums/198274287_9.flac",
     "descripcion": "198274287",
     "imagen": "Albums/198274287.jpg",
@@ -492,7 +451,6 @@
     "Año": "2002"
   },
   {
-    "id": 42,
     "archivo_musica": "Albums/198274287_10.flac",
     "descripcion": "198274287",
     "imagen": "Albums/198274287.jpg",
@@ -504,7 +462,6 @@
     "Año": "2002"
   },
   {
-    "id": 43,
     "archivo_musica": "Albums/198274287_11.flac",
     "descripcion": "198274287",
     "imagen": "Albums/198274287.jpg",
@@ -516,7 +473,6 @@
     "Año": "2002"
   },
   {
-    "id": 44,
     "archivo_musica": "Albums/198274287_12.flac",
     "descripcion": "198274287",
     "imagen": "Albums/198274287.jpg",
@@ -528,7 +484,6 @@
     "Año": "2002"
   },
   {
-    "id": 45,
     "archivo_musica": "Albums/198274287_13.flac",
     "descripcion": "198274287",
     "imagen": "Albums/198274287.jpg",
@@ -540,7 +495,6 @@
     "Año": "2002"
   },
   {
-    "id": 46,
     "archivo_musica": "Albums/198274287_14.flac",
     "descripcion": "198274287",
     "imagen": "Albums/198274287.jpg",
@@ -552,7 +506,6 @@
     "Año": "2002"
   },
   {
-    "id": 47,
     "archivo_musica": "Albums/198274288_1.flac",
     "descripcion": "198274288",
     "imagen": "Albums/198274288.jpg",
@@ -564,7 +517,6 @@
     "Año": "2009"
   },
   {
-    "id": 48,
     "archivo_musica": "Albums/198274288_2.flac",
     "descripcion": "198274288",
     "imagen": "Albums/198274288.jpg",
@@ -576,7 +528,6 @@
     "Año": "2009"
   },
   {
-    "id": 49,
     "archivo_musica": "Albums/198274288_3.flac",
     "descripcion": "198274288",
     "imagen": "Albums/198274288.jpg",
