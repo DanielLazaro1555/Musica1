@@ -630,5 +630,27 @@
     "album": "Me Prefieres A Mi",
     "numero_de_pista": "1/1",
     "Año": "2011"
+  },
+  {
+    "archivo_musica": "Albums/198274292_1.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Dios Te Bendiga",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "1/18",
+    "Año": "2013"
+  },
+  {
+    "archivo_musica": "Albums/198274292_2.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Hace Mucho Tiempo",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "2/18",
+    "Año": "2013"
   }
 ]
