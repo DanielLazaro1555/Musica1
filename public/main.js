@@ -1,18 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Función de ofuscación para la URL del archivo JSON
-  function obfuscateURL(...urls) {
+  function obfuscateURL(url) {
     // Lógica de ofuscación (puedes implementar tu propia lógica aquí)
-    return urls.map((url) => btoa(url));
+    return btoa(url);
   }
 
-  // Lógica de ofuscación de la URL
-  const obfuscatedURLs = obfuscateURL(
-    "https://raw.githubusercontent.com/DanielLazaro1555/Musica1/main/public/bd.json",
+  // Lógica de ofuscación de la URL para el primer archivo JSON
+  const obfuscatedURL1 = obfuscateURL(
+    "https://raw.githubusercontent.com/DanielLazaro1555/Musica1/main/public/bd.json"
+  );
+  // Llamamos a la función loadJSON con la URL ofuscada
+  loadJSON(atob(obfuscatedURL1));
+
+  // Lógica de ofuscación de la URL para el segundo archivo JSON
+  const obfuscatedURL2 = obfuscateURL(
     "https://raw.githubusercontent.com/DanielLazaro1555/Musica2/main/public/bd.json"
   );
-
   // Llamamos a la función loadJSON con la URL ofuscada
-  obfuscatedURLs.forEach((url) => loadJSON(atob(url)));
+  loadJSON(atob(obfuscatedURL2));
 });
 
 var currentSongIndex = 0; // Índice de la canción actual
