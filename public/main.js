@@ -5,20 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
     return btoa(url);
   }
 
-  // Lógica de ofuscación de la URL para el primer archivo JSON
-  const obfuscatedURL1 = obfuscateURL(
+  // Lógica de ofuscación de la URL
+  const obfuscatedURL = obfuscateURL(
     "https://raw.githubusercontent.com/DanielLazaro1555/Musica1/main/public/bd.json"
   );
-  // Llamamos a la función loadJSON con la URL ofuscada
-  loadJSON(atob(obfuscatedURL1));
 
-  // Lógica de ofuscación de la URL para el segundo archivo JSON
-  const obfuscatedURL2 = obfuscateURL(
-    "https://raw.githubusercontent.com/DanielLazaro1555/Musica2/main/public/bd2.json"
-  );
   // Llamamos a la función loadJSON con la URL ofuscada
-  loadJSON(atob(obfuscatedURL2));
+  loadJSON(atob(obfuscatedURL));
 });
+
 
 var currentSongIndex = 0; // Índice de la canción actual
 var allSongsData; // Variable para almacenar todos los datos de las canciones
@@ -127,7 +122,7 @@ function displayCurrentSong(currentSong) {
           }</span></p>
           <div class="audio-player">
             <audio id="audioPlayer">
-            <source src="${getFullUrl(currentSong.archivo_musica)}">
+              <source src="${getFullUrl(currentSong.archivo_musica)}">
               Tu navegador no soporta el elemento de audio.
             </audio>
             <div class="audio-controls">
@@ -175,13 +170,11 @@ function displayCurrentSong(currentSong) {
   function togglePlayPause() {
     if (audioPlayer.paused) {
       audioPlayer.play();
-
-      playPauseButton.innerHTML =
-        '<span style="font-size: 30px;">\u23F8</span>';
+      
+      playPauseButton.innerHTML = '<span style="font-size: 30px;">\u23F8</span>';
     } else {
       audioPlayer.pause();
-      playPauseButton.innerHTML =
-        '<span style="font-size: 30px;">\u25B6</span>';
+      playPauseButton.innerHTML = '<span style="font-size: 30px;">\u25B6</span>';
     }
   }
 
@@ -282,5 +275,4 @@ function regresar() {
 var playPauseButton = document.getElementById("playPauseButton");
 
 // Usar innerHTML para cambiar el contenido del botón
-playPauseButton.innerHTML =
-  '<span style="font-size: 30px; vertical-align: middle;">\u23F8</span>';
+playPauseButton.innerHTML = '<span style="font-size: 30px; vertical-align: middle;">\u23F8</span>';
