@@ -691,5 +691,93 @@
     "album": "Sentimiento, Elegancia Y Maldad",
     "numero_de_pista": "10/18",
     "Año": "2013"
+  },
+  {
+    "archivo_musica": "Albums/198274292_11.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Diferente",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "11/18",
+    "Año": "2013"
+  },
+  {
+    "archivo_musica": "Albums/198274292_12.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Ayer Escuche Una Voz (feat. Nengo Flow)",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "12/18",
+    "Año": "2013"
+  },
+  {
+    "archivo_musica": "Albums/198274292_13.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Me, Myself and My Money [Explicit]",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "13/18",
+    "Año": "2013"
+  },
+  {
+    "archivo_musica": "Albums/198274292_14.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Que Le Den",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "14/18",
+    "Año": "2013"
+  },
+  {
+    "archivo_musica": "Albums/198274292_15.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Le Llego Donde Sea (feat. Genio & Baby Johnny)",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "15/18",
+    "Año": "2013"
+  },
+  {
+    "archivo_musica": "Albums/198274292_16.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Lentamente",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "16/18",
+    "Año": "2013"
+  },
+  {
+    "archivo_musica": "Albums/198274292_17.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Tiene Un Piquete",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "17/18",
+    "Año": "2013"
+  },
+  {
+    "archivo_musica": "Albums/198274292_18.flac",
+    "descripcion": "198274292",
+    "imagen": "Albums/198274292.jpg",
+    "genero": "Latin Music",
+    "titulo": "Por La Plata Baila El Mono [Explicit]",
+    "artista": "Arcangel",
+    "album": "Sentimiento, Elegancia Y Maldad",
+    "numero_de_pista": "18/18",
+    "Año": "2013"
   }
 ]
