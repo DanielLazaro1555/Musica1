@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  /// Función de ofuscación para la URL del archivo JSON
-  function obfuscateURL(urls) {
+  // Función de ofuscación para la URL del archivo JSON
+  function obfuscateURL(...urls) {
     // Lógica de ofuscación (puedes implementar tu propia lógica aquí)
     return urls.map((url) => btoa(url));
   }
