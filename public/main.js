@@ -1,20 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Función de ofuscación para la URL del archivo JSON
-  function obfuscateURL(url) {
+  /// Función de ofuscación para la URL del archivo JSON
+  function obfuscateURL(...urls) {
     // Lógica de ofuscación (puedes implementar tu propia lógica aquí)
-    return btoa(url);
+    return urls.map((url) => btoa(url));
   }
 
   // Lógica de ofuscación de la URL
-  const obfuscatedURL = obfuscateURL(
+  const obfuscatedURLs = obfuscateURL(
     "https://raw.githubusercontent.com/DanielLazaro1555/Musica1/main/public/bd.json",
     "https://raw.githubusercontent.com/DanielLazaro1555/Musica2/main/public/bd.json"
   );
 
   // Llamamos a la función loadJSON con la URL ofuscada
-  loadJSON(atob(obfuscatedURL));
+  obfuscatedURLs.forEach((url) => loadJSON(atob(url)));
 });
-
 
 var currentSongIndex = 0; // Índice de la canción actual
 var allSongsData; // Variable para almacenar todos los datos de las canciones
@@ -171,11 +170,13 @@ function displayCurrentSong(currentSong) {
   function togglePlayPause() {
     if (audioPlayer.paused) {
       audioPlayer.play();
-      
-      playPauseButton.innerHTML = '<span style="font-size: 30px;">\u23F8</span>';
+
+      playPauseButton.innerHTML =
+        '<span style="font-size: 30px;">\u23F8</span>';
     } else {
       audioPlayer.pause();
-      playPauseButton.innerHTML = '<span style="font-size: 30px;">\u25B6</span>';
+      playPauseButton.innerHTML =
+        '<span style="font-size: 30px;">\u25B6</span>';
     }
   }
 
@@ -276,4 +277,5 @@ function regresar() {
 var playPauseButton = document.getElementById("playPauseButton");
 
 // Usar innerHTML para cambiar el contenido del botón
-playPauseButton.innerHTML = '<span style="font-size: 30px; vertical-align: middle;">\u23F8</span>';
+playPauseButton.innerHTML =
+  '<span style="font-size: 30px; vertical-align: middle;">\u23F8</span>';
