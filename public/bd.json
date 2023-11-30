@@ -1,5 +1,6 @@
-[{
-"archivo_musica": "Albums/198274283_1.flac",
+[
+  {
+    "archivo_musica": "Albums/198274283_1.flac",
     "descripcion": "198274283",
     "imagen": "Albums/198274283.jpg",
     "genero": "Pop/General",
@@ -7,8 +8,8 @@
     "artista": "Robbie Williams",
     "album": "Angels",
     "numero_de_pista": "1/4",
-    "Año": "1997"  
-},
+    "Año": "1997"
+  },
   {
     "archivo_musica": "Albums/198274283_2.flac",
     "descripcion": "198274283",
@@ -60,7 +61,7 @@
     "genero": "Rock/General",
     "titulo": "Talk To Me",
     "artista": "Robbie Williams",
-    "album": "Angels",
+    "album": "Rock DJ",
     "numero_de_pista": "2/3",
     "Año": "2000"
   },
@@ -71,7 +72,7 @@
     "genero": "Rock/General",
     "titulo": "Rock DJ (Player One Remix)",
     "artista": "Robbie Williams",
-    "album": "Angels",
+    "album": "Rock DJ",
     "numero_de_pista": "3/3",
     "Año": "2000"
   },
@@ -214,7 +215,7 @@
     "genero": "Rock/General",
     "titulo": "Ser Mejor",
     "artista": "Robbie Williams",
-    "album": "Sing When You're Winning",
+    "album": "Sing When You're Winning [Explicit]",
     "numero_de_pista": "13/13",
     "Año": "2000"
   },
@@ -226,7 +227,7 @@
     "titulo": "Often (Live In The Dressing Room, Manchester, UK / 2000)",
     "artista": "Robbie Williams",
     "album": "Sing When You're Winning",
-    "numero_de_pista": "13/13(hidden track)",
+    "numero_de_pista": "13/13",
     "Año": "2000"
   },
   {
@@ -565,7 +566,7 @@
     "imagen": "Albums/198274289.jpg",
     "genero": "Alternative Rock",
     "titulo": "Xenogenesis",
-    "artista": "TheFatRat & NEFFEX",
+    "artista": "TheFatRat",
     "album": "Back One Day (Outro Song)",
     "numero_de_pista": "2/2",
     "Año": "2014"
